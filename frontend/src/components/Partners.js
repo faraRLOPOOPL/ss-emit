@@ -1,6 +1,6 @@
 import React from 'react'
 import {PartnerCard} from './PartnerCard'
-import {PartnersDiscountCarousel, scrollDisc} from './ParnersDiscountCarousel'
+import {PartnersDiscountCarousel} from './ParnersDiscountCarousel'
 import pekarnya from '../media/images/pekarnya.png'
 import mart from '../media/images/mart.jpg'
 import strel from '../media/images/4szLGMSEh-4.jpg'
@@ -21,7 +21,24 @@ export const Partners = () => {
     )
 }
 export const PartnersDiscount = () => {
+    let offset=0;
+    const slideleft = () =>{
+        let a=document.querySelector('.PartnersDiscount');
+        offset-=950;
+        if(offset<-150){
+            offset=2685;
+        }
+        a.style.left= -offset+'px';
+    }
+    const slideright = () =>{
+        let a=document.querySelector('.PartnersDiscount');
+        offset+=950;
+        if(offset>2686){
+            offset=-150;
+        }
 
+        a.style.left= -offset+'px';
+    }
     const PartnersDiscountImage=[
         {"img":a1},
         {"img":a2},
@@ -36,8 +53,8 @@ export const PartnersDiscount = () => {
             <div class="PartnersDiscount">
                 {PartnersDiscountImage.map(item => <PartnersDiscountCarousel key={item.img} img={item.img} />)}
             </div>
-            <button class='button-slideleft'><span>сюdddddddddddddddddddddddddddddddddddddddда</span></button>
-            <button class='button-slideright'><span>тnnnnnnnnnnnnnnnnnnnnnnnуда</span></button>
+            <button class='slideleft' onClick={slideleft}>122222222222222222222222222222222222</button>
+            <button class='slideright' onClick={slideright}>3</button>
         </div>
     )
 }

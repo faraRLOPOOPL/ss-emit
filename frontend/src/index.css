@@ -946,7 +946,8 @@ body {
   width: max-content;
   display: flex;
   position: relative;
-  left: -790px;
+  transition: all ease 1s;
+  left: 150px;
 
 }
 .DiscountImage{
@@ -956,6 +957,13 @@ body {
   margin-left: 75px;
   overflow: hidden;
 }
+.slideleft{
+  left: 0px;
+}
+.slideright{
+  right: 50%;
+}
+
 /* PartnersCard */
 /*   */
 .PartnerCard{
