@@ -8,6 +8,7 @@ import { EventsPage } from "./pages/EventsPage"
 import { Auth } from "./pages/AuthPage"
 import { DashBoard } from "./pages/Dashboard"
 import { PageInDevelopment } from "./pages/PageInDevelopment"
+import { HistoryPage } from "./pages/HistoryPage"
 
 export const useRoutes = (isAuthenticated) => {
 
@@ -21,6 +22,7 @@ export const useRoutes = (isAuthenticated) => {
                 <Route path="*" element={<PageInDevelopment />}/>
                 <Route path="/lk" element={<DashBoard />}/>
                 <Route path="/partners" element={<PartnersPage />}/>
+                <Route path="/history" element={<HistoryPage />}/>
             </Routes>
         )
     }
@@ -33,6 +35,7 @@ export const useRoutes = (isAuthenticated) => {
             <Route path="*" element={<PageInDevelopment />}/>
             <Route path="/lk" element={<Auth />}/>
             <Route path="/partners" element={<PartnersPage />}/>
+            <Route path="/history" element={<HistoryPage />}/>
         </Routes>
     )
 }

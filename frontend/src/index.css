@@ -1363,3 +1363,49 @@ body {
   }
 }
 
+
+
+/* ИсторияЭмит */
+
+/* начало истории */
+
+.HistoryHead{
+  position: absolute;
+  margin-left: 15%;
+  /* position: relative; */
+  padding-right: 40%;
+  bottom: 1px;
+}
+.historytext1{
+  font-size:250%;
+  font-weight:400;
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+.historytext{
+  font-weight: 300;
+  font-size:100%;
+  line-height: 150%;
+}
+.HistoryHead button{
+  margin-top: 30px;
+}
+.historyButtonL{
+  background-color: #CB0A00;
+  width: 23%;
+  height: 40px;
+}
+.historyButtonR{
+  background-color: #EDF0F7;
+  margin-left: 7%;
+  width: 23%;
+  height: 40px;
+}
+.HistoryImg{
+  box-shadow:inset 10px 10px 10px red;
+  position: relative;
+  width:100%;
+}
+/* .ShadowHistoryImg{
+  box-shadow: inset 100px 100px 100px red;
+} */
